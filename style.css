@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype'), url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+body {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.desktop-hero {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem 2.5rem;
+    gap: 1.5rem
+}
+
+.heading-content {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    gap: 1rem;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-status {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.125;
+}
+
+.error-message {
+    color: hsla(4, 100%, 67%, 1);
+    /* display: none; */
+}
+
+input {
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+input#email-submit {
+    width: 100%;
+    flex: 1 0 376px;
+    border-radius: 8px;
+    border: none;
+    outline: 1px solid hsla(243, 28%, 13%, 0.25);
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+input#submit-btn {
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: hsla(234, 29%, 20%, 1);
+    padding: 1.125rem 2.875rem 0.875rem 3rem;
+}
+
+.thank-form {
+    position: absolute;
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38.9375rem;
+    max-height: 100%;
+    margin: 9.3125rem 1.5rem 2.5rem;
+}
+
+h1.thank-heading {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 1em 0 0.6em;
+}
+
+.dismiss-btn {
+    color: hsla(0, 0%, 100%, 1);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1.125rem 6.0875rem 0.875rem 6.2125rem;
+    border-radius: 8px;
+    background: hsla(234, 29%, 20%, 1);
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: hsla(234, 17%, 26%, 1);
+    }
+
+    .container {
+        flex-direction: row;
+        margin: 13.6875rem 17.7777%;
+    }
+
+    .sign-up-form {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0;
+        border-radius: 36px;
+        background: #FFF;
+        box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+        padding: 1.5rem;
+    }
+
+    .desktop-hero {
+        display: block;
+    }
+
+    .mobile-hero {
+        display: none;
+    }
+
+    .main-content {
+        margin: 4.625rem 4rem 4.625rem 2.5rem;
+        max-width: 23.5rem;
+    }
+
+    .heading-content {
+        font-size: 3.5rem;
+    }
+
+    .thank-form {
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 31.5rem;
+        height: fit-content;
+        max-height: 100%;
+        background: hsla(0, 0%, 100%, 1);
+        border-radius: 36px;
+        box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+        padding: 4rem;
+        margin: 17.5rem auto;
+    }
+
+    h1.thank-heading {
+        font-size: 3.5rem;
+    }
+
+    .thank-description {
+        margin-bottom: 2.5rem;
+    }
+}
