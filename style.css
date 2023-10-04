@@ -119,9 +119,10 @@ input#submit-btn {
     width: 100%;
     border: none;
     border-radius: 8px;
-    background: hsla(234, 29%, 20%, 1);
+    background-color: hsla(234, 29%, 20%, 1);
     padding: 1.125rem 2.875rem 0.875rem 3rem;
 }
+
 
 .thank-form {
     position: absolute;
@@ -151,10 +152,11 @@ h1.thank-heading {
     line-height: 1.5;
     padding: 1.125rem 6.0875rem 0.875rem 6.2125rem;
     border-radius: 8px;
+    border: none;
     background: hsla(234, 29%, 20%, 1);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
     body {
         background: hsla(234, 17%, 26%, 1);
     }
@@ -191,6 +193,19 @@ h1.thank-heading {
         font-size: 3.5rem;
     }
 
+    input#email-submit {
+        outline-color: hsla(243, 28%, 13%, 0.25);
+    }
+
+    input#email-submit:hover {
+        outline-color: hsla(234, 29%, 20%, 1);
+    }
+
+    input#submit-btn:hover {
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+        background: linear-gradient(204deg, hsl(13, 100%, 63%) 0%, hsl(344, 100%, 63%) 100%);
+    }
+
     .thank-form {
         display: none;
         width: 100%;
@@ -219,5 +234,10 @@ h1.thank-heading {
 
     .thank-description {
         margin-bottom: 2.5rem;
+    }
+
+    .dismiss-btn:hover {
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+        background: linear-gradient(204deg, hsl(13, 100%, 63%) 0%, hsl(344, 100%, 63%) 100%);
     }
 }
