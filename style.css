@@ -29,6 +29,7 @@ svg {
 
 
 body {
+    color: hsla(234, 29%, 20%, 1);
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 400;
@@ -109,7 +110,7 @@ input#email-submit {
     border-radius: 8px;
     border: none;
     outline: 1px solid hsla(243, 28%, 13%, 0.25);
-    padding: 1rem 1.5rem;
+    padding: 1.3rem 1.5rem 1.2rem;
     margin: 0.5rem 0 1.5rem;
 }
 
@@ -120,7 +121,7 @@ input#submit-btn {
     border: none;
     border-radius: 8px;
     background-color: hsla(234, 29%, 20%, 1);
-    padding: 1.125rem 2.875rem 0.875rem 3rem;
+    padding: 1.225rem 2.875rem 0.975rem 3rem;
 }
 
 
@@ -238,6 +239,7 @@ h1.thank-heading {
 
     .dismiss-btn:hover {
         box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+
         background: linear-gradient(204deg, hsl(13, 100%, 63%) 0%, hsl(344, 100%, 63%) 100%);
     }
 }
